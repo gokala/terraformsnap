@@ -23,5 +23,4 @@ steps:
     backendAzureRmStorageAccountName: 'dataplugin'
     backendAzureRmContainerName: 'dpstate'
     backendAzureRmKey: 'snapshotest.tfstate'
-    
--
+  
