@@ -19,7 +19,7 @@ data "azurerm_resource_group" "example" {
   name     = "hub-aks"
 }
 module "vnet" {
-  source              = "..//modules/Vnet"
+  source              = ".//modules/Vnet"
   resourcegroup       = data.azurerm_resource_group.example.name
   location            = data.azurerm_resource_group.example.location
   vnet_name           = "dataplugin-vnet11"
