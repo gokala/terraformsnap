@@ -24,4 +24,3 @@ steps:
     backendAzureRmContainerName: 'dpstate'
     backendAzureRmKey: 'snapshotest.tfstate'
 
-- 
