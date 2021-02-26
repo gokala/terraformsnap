@@ -49,7 +49,7 @@ module "vnet" {
   }  
   */
  module "Cloudera" {
-  source              = ".//modules/Cloudera-VM"
+  source              = ".//terraformsnap/modules/Cloudera-VM"
   OS-snapshot            ="cloudera"
   datadisk0-snapshot  ="app01"
   #datadisk1-snapshot
