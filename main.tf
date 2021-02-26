@@ -19,7 +19,7 @@ data "azurerm_resource_group" "example" {
   name     = "hub-aks"
 }
 module "vnet" {
-  source              = "./gokala/terraformsnap/modules/Vnet"
+  source              = "https://github.com/gokala/terraformsnap/tree/main/Modules/Vnet"
   resourcegroup       = data.azurerm_resource_group.example.name
   location            = data.azurerm_resource_group.example.location
   vnet_name           = "dataplugin-vnet11"
@@ -49,7 +49,7 @@ module "vnet" {
   }  
   */
  module "Cloudera" {
-  source              = "./gokala/terraformsnap/modules/Cloudera-VM"
+  source              = "https://github.com/gokala/terraformsnap/tree/main/Modules/Cloudera-VM"
   OS-snapshot            ="cloudera"
   datadisk0-snapshot  ="app01"
   #datadisk1-snapshot
