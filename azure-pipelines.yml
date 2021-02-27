@@ -18,6 +18,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    commandOptions: 'azurermVersion:2.41.0'
     backendServiceArm: 'checkfor tee'
     backendAzureRmResourceGroupName: 'terraform-dp'
     backendAzureRmStorageAccountName: 'dataplugin'
