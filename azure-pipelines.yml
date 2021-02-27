@@ -13,11 +13,10 @@ steps:
 - task: TerraformInstaller@0
   displayName: Install terraform
   inputs:
-    terraformVersion: 'v0.14.6'
+    terraformVersion: '0.13.4'
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
-    azurermVersion: '2.41.0'
     command: 'init'    
     backendServiceArm: 'checkfor tee'
     backendAzureRmResourceGroupName: 'terraform-dp'
