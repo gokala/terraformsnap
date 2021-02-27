@@ -17,8 +17,8 @@ steps:
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
-    command: 'init'
-    commandOptions: 'azurermVersion:2.41.0'
+    azurermVersion: '2.41.0'
+    command: 'init'    
     backendServiceArm: 'checkfor tee'
     backendAzureRmResourceGroupName: 'terraform-dp'
     backendAzureRmStorageAccountName: 'dataplugin'
